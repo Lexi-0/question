@@ -174,14 +174,13 @@
 
         .celebration-text {
             font-size: 36px;
-            color: white;
+            color: #333;
             margin-bottom: 30px;
             font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         .gif-container {
-            font-size: 120px;
+            font-size: 100px;
             animation: bounce 1s infinite;
         }
 
@@ -211,6 +210,76 @@
             to {
                 transform: translateY(-100vh) rotate(360deg);
                 opacity: 0;
+            }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .envelope {
+                width: 250px;
+                height: 170px;
+            }
+
+            .envelope-text {
+                font-size: 20px;
+            }
+
+            .letter {
+                padding: 30px 25px;
+                max-width: 95%;
+            }
+
+            .celebration-text {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+
+            .gif-container {
+                font-size: 70px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .envelope {
+                width: 220px;
+                height: 150px;
+            }
+
+            .envelope-text {
+                font-size: 18px;
+            }
+
+            .letter {
+                padding: 25px 20px;
+                max-height: 85vh;
+            }
+
+            .letter-content {
+                font-size: 15px;
+                line-height: 1.6;
+            }
+
+            .question {
+                font-size: 18px;
+                margin: 25px 0 15px 0;
+            }
+
+            .button-group {
+                gap: 15px;
+            }
+
+            .btn {
+                padding: 10px 25px;
+                font-size: 14px;
+            }
+
+            .celebration-text {
+                font-size: 22px;
+                margin-bottom: 15px;
+            }
+
+            .gif-container {
+                font-size: 50px;
             }
         }
     </style>
